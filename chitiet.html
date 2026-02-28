@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHI TIẾT SẢN PHẨM</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <img
+            src="https://cdn2.cellphones.com.vn/x/media/wysiwyg/Web/campaign/2026/Logo-Cellphones_hoa-mai.gif"
+            alt="DatLai Logo"
+          />
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Trang Chủ</a></li>
+            <li><a href="#categories">Danh Mục</a></li>
+            <li><a href="#products">Sản Phẩm</a></li>
+            <li><a href="#contact">Liên Hệ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="cps-container">
+      <br />
+      <div id="breadcrumbs">
+        <a href="/index.html"><i class="fa-regular fa-house"></i> Trang Chủ</a>
+        / <a href="/index.html#products"> Sản Phẩm </a> /
+        <a href="/chitiet.html"> IPHONE 17 PRO MAX </a>
+      </div>
+
+      <div class="grid_tong">
+        <div class="sanpham">
+          <h3>iPhone 17 Pro 256GB | Chính hãng</h3>
+          <div class="gallery-product-detail mb-2">
+            <div class="gallery-main">
+              <img
+                id="mainImage"
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-256-gb.png"
+                alt=""
+              />
+            </div>
+
+            <div class="gallery-thumbs">
+              <img
+                class="active"
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-256-gb.png"
+                onclick="changeImage(this)"
+              />
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro_1.jpg"
+                onclick="changeImage(this)"
+              />
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-1_1.jpg"
+                onclick="changeImage(this)"
+              />
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-2_1_1.jpg"
+                onclick="changeImage(this)"
+              />
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-3_1_1.jpg"
+                onclick="changeImage(this)"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="thongtin">
+          <div class="option-group">
+            <h3>Dung lượng</h3>
+            <div class="option-row">
+              <div class="options">
+                <div class="opt active" onclick="selectOpt(this)">
+                  256 GB <span class="tick">✔</span>
+                </div>
+                <div class="opt" onclick="selectOpt(this)">
+                  512 GB <span class="tick">✔</span>
+                </div>
+                <div class="opt" onclick="selectOpt(this)">
+                  1 TB <span class="tick">✔</span>
+                </div>
+                <div class="opt" onclick="selectOpt(this)">
+                  2 TB <span class="tick">✔</span>
+                </div>
+              </div>
+            </div>
+            <h3>Màu sắc</h3>
+            <div class="option-row">
+              <div class="options">
+                <div class="opt img active" onclick="selectOpt(this)">
+                  <img
+                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-256-gb.png"
+                  />
+                  Cam Vũ Trụ <span class="tick">✔</span>
+                </div>
+                <div class="opt img" onclick="selectOpt(this)">
+                  <img
+                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-3.jpg"
+                  />
+                  Bạc <span class="tick">✔</span>
+                </div>
+                <div class="opt img" onclick="selectOpt(this)">
+                  <img
+                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-2.jpg"
+                  />
+                  Xanh Đậm <span class="tick">✔</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>Giá tiền</h3>
+          <div class="price-box">
+            <div class="price-left">
+              <div class="label">Giá sản phẩm</div>
+              <div class="price-main">36.500.000đ</div>
+              <div class="price-old">39.990.000đ</div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="price-right">
+              <div class="trade-tag">Thu cũ lên đời chỉ từ</div>
+              <div class="price-trade">30.957.000đ</div>
+              <div class="support">
+                Trợ giá đến <span>2.000.000</span>
+                <a href="#">Định giá ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Xem Thêm Sản Phẩm Khác</h3>
+      <div class="categories-grid">
+        <a href="/chitiet.html" class="category-card minigame-card">
+          <div class="category-card-image">
+            <img
+              loading="lazy"
+              src="https://cdn.tgdd.vn/Products/Images/42/342679/iphone-17-pro-max-cam-thumb-600x600.jpg"
+              alt="Iphone 17 Pro Max"
+              style="max-height: 95%; object-fit: contain"
+            />
+            <span class="category-badge" style="color: white">Bán chạy</span>
+          </div>
+          <div class="category-card-body">
+            <h3 class="category-card-title">Iphone 17 Pro Max</h3>
+            <div class="category-card-price">
+              <span class="price-label">Giá:</span>
+
+              <span class="price-value"
+                >36.500.000₫<span class="badge" style="font-size: 10px"
+                  >⚡ -10%</span
+                ></span
+              >
+            </div>
+            <div class="category-card-meta">
+              <span class="meta-item sold"> Đã bán 39.972 </span>
+            </div>
+            <div class="category-card-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">5</span>
+            </div>
+          </div>
+          <div class="category-card-action">
+            <span class="btn-explore">Mua ngay →</span>
+          </div>
+        </a>
+        <a href="/chitiet.html" class="category-card minigame-card">
+          <div class="category-card-image">
+            <img
+              loading="lazy"
+              src="https://cdn.tgdd.vn/Products/Images/42/342679/iphone-17-pro-max-cam-thumb-600x600.jpg"
+              alt="Iphone 17 Pro Max"
+              style="max-height: 95%; object-fit: contain"
+            />
+            <span class="category-badge" style="color: white">Bán chạy</span>
+          </div>
+          <div class="category-card-body">
+            <h3 class="category-card-title">Iphone 17 Pro Max</h3>
+            <div class="category-card-price">
+              <span class="price-label">Giá:</span>
+
+              <span class="price-value"
+                >36.500.000₫<span class="badge" style="font-size: 10px"
+                  >⚡ -10%</span
+                ></span
+              >
+            </div>
+            <div class="category-card-meta">
+              <span class="meta-item sold"> Đã bán 39.972 </span>
+            </div>
+            <div class="category-card-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">5</span>
+            </div>
+          </div>
+          <div class="category-card-action">
+            <span class="btn-explore">Mua ngay →</span>
+          </div>
+        </a>
+        <a href="/chitiet.html" class="category-card minigame-card">
+          <div class="category-card-image">
+            <img
+              loading="lazy"
+              src="https://cdn.tgdd.vn/Products/Images/42/342679/iphone-17-pro-max-cam-thumb-600x600.jpg"
+              alt="Iphone 17 Pro Max"
+              style="max-height: 95%; object-fit: contain"
+            />
+            <span class="category-badge" style="color: white">Bán chạy</span>
+          </div>
+          <div class="category-card-body">
+            <h3 class="category-card-title">Iphone 17 Pro Max</h3>
+            <div class="category-card-price">
+              <span class="price-label">Giá:</span>
+
+              <span class="price-value"
+                >36.500.000₫<span class="badge" style="font-size: 10px"
+                  >⚡ -10%</span
+                ></span
+              >
+            </div>
+            <div class="category-card-meta">
+              <span class="meta-item sold"> Đã bán 39.972 </span>
+            </div>
+            <div class="category-card-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">5</span>
+            </div>
+          </div>
+          <div class="category-card-action">
+            <span class="btn-explore">Mua ngay →</span>
+          </div>
+        </a>
+        <a href="/chitiet.html" class="category-card minigame-card">
+          <div class="category-card-image">
+            <img
+              loading="lazy"
+              src="https://cdn.tgdd.vn/Products/Images/42/342679/iphone-17-pro-max-cam-thumb-600x600.jpg"
+              alt="Iphone 17 Pro Max"
+              style="max-height: 95%; object-fit: contain"
+            />
+            <span class="category-badge" style="color: white">Bán chạy</span>
+          </div>
+          <div class="category-card-body">
+            <h3 class="category-card-title">Iphone 17 Pro Max</h3>
+            <div class="category-card-price">
+              <span class="price-label">Giá:</span>
+
+              <span class="price-value"
+                >36.500.000₫<span class="badge" style="font-size: 10px"
+                  >⚡ -10%</span
+                ></span
+              >
+            </div>
+            <div class="category-card-meta">
+              <span class="meta-item sold"> Đã bán 39.972 </span>
+            </div>
+            <div class="category-card-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">5</span>
+            </div>
+          </div>
+          <div class="category-card-action">
+            <span class="btn-explore">Mua ngay →</span>
+          </div>
+        </a>
+        <a href="/chitiet.html" class="category-card minigame-card">
+          <div class="category-card-image">
+            <img
+              loading="lazy"
+              src="https://cdn.tgdd.vn/Products/Images/42/342679/iphone-17-pro-max-cam-thumb-600x600.jpg"
+              alt="Iphone 17 Pro Max"
+              style="max-height: 95%; object-fit: contain"
+            />
+            <span class="category-badge" style="color: white">Bán chạy</span>
+          </div>
+          <div class="category-card-body">
+            <h3 class="category-card-title">Iphone 17 Pro Max</h3>
+            <div class="category-card-price">
+              <span class="price-label">Giá:</span>
+
+              <span class="price-value"
+                >36.500.000₫<span class="badge" style="font-size: 10px"
+                  >⚡ -10%</span
+                ></span
+              >
+            </div>
+            <div class="category-card-meta">
+              <span class="meta-item sold"> Đã bán 39.972 </span>
+            </div>
+            <div class="category-card-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-value">5</span>
+            </div>
+          </div>
+          <div class="category-card-action">
+            <span class="btn-explore">Mua ngay →</span>
+          </div>
+        </a>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="foot-about">
+          <h3>DatLai</h3>
+          <p>Hệ thống bán lẻ điện thoại — Uy tín, chính hãng, giao nhanh.</p>
+        </div>
+        <div class="foot-links">
+          <a href="#">Chính sách bảo hành</a>
+          <a href="#">Chính sách đổi trả</a>
+          <a href="#">Liên hệ</a>
+        </div>
+      </div>
+      <div class="copyright">© 2026 DatLai - All rights reserved.</div>
+    </footer>
+    <script>
+      function changeImage(el) {
+        const main = document.getElementById("mainImage");
+
+        main.classList.remove("animate");
+        void main.offsetWidth;
+        main.src = el.src;
+        main.classList.add("animate");
+
+        document
+          .querySelectorAll(".gallery-thumbs img")
+          .forEach((img) => img.classList.remove("active"));
+
+        el.classList.add("active");
+      }
+      function border_button(el) {
+        document.querySelector(".active")?.classList.remove("active");
+
+        el.classList.add("active");
+      }
+    </script>
+    <script>
+      function selectOpt(el) {
+        const parent = el.parentElement;
+        parent
+          .querySelectorAll(".opt")
+          .forEach((o) => o.classList.remove("active"));
+        el.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
